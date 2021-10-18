@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5bb93003c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js" type="module" defer></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Weather card -->
+      <article class="card">
+        <div class="search">
+          <input type="text" class="search-bar" placeholder="Search" />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+        <section class="weather loading">
+          <h1 class="city">Weather in Hamburg</h1>
+          <div class="temps">
+            <h3 class="temp__heading-min">min</h3>
+            <p class="temp_min">4°</p>
+            <h2 class="temp">10°C</h2>
+            <h3 class="temp__heading-max">max</h3>
+            <p class="temp_max">12°</p>
+          </div>
+
+          <div class="info">
+            <img src="" alt="" class="icon" />
+            <p class="description">Cloudy</p>
+          </div>
+          <p class="humidity">Humidity: 58%</p>
+          <p class="wind">Wind speed: 5.7 km/h</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
