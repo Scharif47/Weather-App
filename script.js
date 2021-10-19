@@ -2,15 +2,16 @@
 const searchButton = document.querySelector(".search button");
 const searchBar = document.querySelector(".search-bar");
 
+const token = keys.apiKey;
+
 // initale search value
 let searchCity = "Berlin";
 
 // Weather object
 const weather = {
-  apiKey: "7966c34dfdc2c599ce24f56248ea9aea",
   fetchWeather(city) {
     fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${this.apiKey}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${token}`
     )
       .then((response) => response.json())
       .then((data) => this.renderWeather(data));
